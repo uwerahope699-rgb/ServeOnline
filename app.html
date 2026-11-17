@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ServeOnline</title>
+<link rel="stylesheet" href="app.css">
+  <link href__="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href__="#" class="logo">Serve<span>Online</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href__="#home" class="active">Home</a></li>
+        <li><a href__="#services">Services</a></li>
+        <li><a href__="#how-it-works">How It Works</a></li>
+        <li><a href__="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">🌙</button>
+        <a href__="#services" class="btn-primary">Get Started</a>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-circle c1"></div>
+    <div class="hero-bg-circle c2"></div>
+    <div class="hero-content">
+      <span class="badge">100% Online · No Waiting · No Travel</span>
+      <h1>Access Government &amp;<br/>Public Services <span class="accent">From Home</span></h1>
+      <p>Skip the long queues and paperwork. Apply, renew, pay, and manage your essential services instantly — all in one place.</p>
+      <div class="hero-btns">
+        <a href__="#services" class="btn-accent">Browse Services →</a>
+        <a href__="#how-it-works" class="btn-outline">▶ How It Works</a>
+      </div>
+      <div class="stats">
+        <div><strong>50+</strong><span>Services</span></div>
+        <div><strong>200K+</strong><span>Happy Users</span></div>
+        <div><strong>24/7</strong><span>Available</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section bg-muted" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">What We Offer</span>
+        <h2>Our Online Services</h2>
+        <p>Everything you need — available online, 24 hours a day, 7 days a week.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Simple Process</span>
+        <h2>How It Works</h2>
+        <p>Getting your services done has never been easier.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-icon">👤</div>
+          <div class="step-num">01</div>
+          <h3>Create an Account</h3>
+          <p>Sign up in minutes with your basic information. No paperwork needed.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">🔍</div>
+          <div class="step-num">02</div>
+          <h3>Find Your Service</h3>
+          <p>Browse or search from 50+ available government and public services.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">📤</div>
+          <div class="step-num">03</div>
+          <h3>Submit Your Request</h3>
+          <p>Fill in the required details and upload documents securely online.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">✅</div>
+          <div class="step-num">04</div>
+          <h3>Get It Done</h3>
+          <p>Receive confirmation and track your request status in real-time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section bg-muted" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">What People Say</span>
+        <h2>Trusted by Citizens</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I renewed my ID card without leaving my house. Incredible service!"</p>
+          <div class="author"><div class="avatar">AM</div><div><strong>Amara M.</strong><span>Teacher</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Vehicle registration used to take a whole day. Now it takes 10 minutes."</p>
+          <div class="author"><div class="avatar">JK</div><div><strong>Jean K.</strong><span>Entrepreneur</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The healthcare booking feature saved me so much time. Highly recommend!"</p>
+          <div class="author"><div class="avatar">SR</div><div><strong>Sarah R.</strong><span>Nurse</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Get In Touch</span>
+        <h2>Contact Us</h2>
+        <p>Have questions or need help? We're here for you.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" required placeholder=""/></div>
+            <div class="form-group"><label>Last Name</label><input type="text" required placeholder=""/></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" required placeholder="hope40@example.com"/></div>
+          <div class="form-group"><label>Subject</label><input type="text" required placeholder="How can we help?"/></div>
+          <div class="form-group"><label>Message</label><textarea rows="4" required placeholder="Tell us more..."></textarea></div>
+          <button type="submit" class="btn-primary full">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="info-card"><span>📧</span><div><strong>Email Us</strong><p>support@serveonline.com</p></div></div>
+          <div class="info-card"><span>📞</span><div><strong>Call Us</strong><p>+250 722471485</p></div></div>
+          <div class="info-card"><span>📍</span><div><strong>Location</strong><p>Available Nationwide</p></div></div>
+          <div class="info-card"><span>🕐</span><div><strong>Working Hours</strong><p>24/7 Online</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="color:white">Serve<span>Online</span></div>
+          <p>Your one-stop portal for accessing government and public services.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href__="#home">Home</a></li>
+            <li><a href__="#services">Services</a></li>
+            <li><a href__="#how-it-works">How It Works</a></li>
+            <li><a href__="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular Services</h4>
+          <ul>
+            <li><a href__="#services">Document Renewal</a></li>
+            <li><a href__="#services">Vehicle Registration</a></li>
+            <li><a href__="#services">Healthcare Booking</a></li>
+            <li><a href__="#services">Tax Filing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>📧 support@serveonline.com</p>
+          <p>📞 +250 722471485</p>
+          <p>📍 Available Nationwide</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 ServeOnline. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- SERVICE MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <div class="modal-icon" id="modalIcon"></div>
+          <h3 id="modalServiceTitle"></h3>
+        </div>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <p id="modalDesc"></p>
+        <form id="modalForm">
+          <div class="form-group"><label>Full Name</label><input type="text" required placeholder="Enter your full name"/></div>
+          <div class="form-group"><label>Email Address</label><input type="email" required placeholder="Enter your email"/></div>
+          <div class="form-group"><label>National ID / Reference Number</label><input type="text" required placeholder="Enter your ID number"/></div>
+          <div class="form-group"><label>Additional Notes (Optional)</label><textarea rows="3" placeholder="Any additional information..."></textarea></div>
+          <div class="secure-notice">🔒 Your information is encrypted and stored securely.</div>
+          <button type="submit" class="btn-primary full">Submit Request</button>
+        </form>
+        <div class="modal-success" id="modalSuccess" style="display:none">
+          <div class="success-icon">✅</div>
+          <h3>Request Submitted!</h3>
+          <p>We'll process your request shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+  </body>
+</html>
